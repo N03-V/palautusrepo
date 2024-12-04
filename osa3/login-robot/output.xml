@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.13.0 on win32)" generated="20241121 17:34:07.134" rpa="false" schemaversion="4">
+<suite id="s1" name="Login" source="C:\kurssit\ohtu\palautusrepo\osa3\login-robot\src\tests\login.robot">
+<test id="s1-t1" name="Login With Correct Credentials" line="6">
+<kw name="Create User And Input Login Command" type="SETUP">
+<kw name="Create User">
+<arg>kalle</arg>
+<arg>kalle123</arg>
+<msg timestamp="20241121 17:34:07.187" level="FAIL">No keyword with name 'Create User' found.</msg>
+<status status="FAIL" starttime="20241121 17:34:07.187" endtime="20241121 17:34:07.187"/>
+</kw>
+<kw name="Input Login Command" library="resource">
+<status status="NOT RUN" starttime="20241121 17:34:07.187" endtime="20241121 17:34:07.187"/>
+</kw>
+<status status="FAIL" starttime="20241121 17:34:07.186" endtime="20241121 17:34:07.187"/>
+</kw>
+<status status="FAIL" starttime="20241121 17:34:07.185" endtime="20241121 17:34:07.187">Setup failed:
+No keyword with name 'Create User' found.</status>
+</test>
+<status status="FAIL" starttime="20241121 17:34:07.141" endtime="20241121 17:34:07.188"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20241121 17:34:07.185" level="ERROR">Error in file 'C:\kurssit\ohtu\palautusrepo\osa3\login-robot\src\tests\resource.robot' on line 2: Importing library 'C:\kurssit\ohtu\palautusrepo\osa3\login-robot\src\AppLibrary.py' failed: ImportError: cannot import name 'sys' from 'entities.user' (C:\kurssit\ohtu\palautusrepo\osa3\login-robot\src\entities\user.py)
+Traceback (most recent call last):
+  File "C:\kurssit\ohtu\palautusrepo\osa3\login-robot\src\AppLibrary.py", line 3, in &lt;module&gt;
+    from services.user_service import UserService
+  File "C:\kurssit\ohtu\palautusrepo\osa3\login-robot\src\services\user_service.py", line 1, in &lt;module&gt;
+    from entities.user import User, sys, pdb
+PYTHONPATH:
+  C:\kurssit\ohtu\palautusrepo\osa3\login-robot\src
+  C:\Users\Nea\AppData\Local\pypoetry\Cache\virtualenvs\login-robot-9piehl4W-py3.13\Scripts\robot.exe
+  C:\Users\Nea\AppData\Local\pypoetry\Cache\virtualenvs\login-robot-9piehl4W-py3.13\Scripts\python313.zip
+  C:\Users\Nea\AppData\Local\Programs\Python\Python313\DLLs
+  C:\Users\Nea\AppData\Local\Programs\Python\Python313\Lib
+  C:\Users\Nea\AppData\Local\Programs\Python\Python313
+  C:\Users\Nea\AppData\Local\pypoetry\Cache\virtualenvs\login-robot-9piehl4W-py3.13
+  C:\Users\Nea\AppData\Local\pypoetry\Cache\virtualenvs\login-robot-9piehl4W-py3.13\Lib\site-packages</msg>
+</errors>
+</robot>
